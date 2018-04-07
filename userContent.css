@@ -1,0 +1,102 @@
+/*
+I need to comment, but not right now.
+
+    Open Firefox and press Alt to show the top menu, then click on Help → Troubleshooting Information
+    Click the Show Folder button beside the Profile Folder entry
+    Create a folder named chrome in the directory that opens
+    In the chrome folder paste the .css file with the name userContent.css
+*/
+
+/* The new tab of firefox */
+@-moz-document url(about:newtab) {
+    .activity-stream {
+        background-color: #333333 !important;
+    }
+    .top-sites-list .top-site-outer > a {
+        color: #dddddd !important;
+    }
+    /*
+    .tile {
+      filter: grayscale(0%) !important;
+      opacity: .9 !important;
+    }
+    */
+    .top-site-inner {
+        color: #ddd;
+    }
+    @media (min-width: 1280px) {
+      .activity-stream main {
+        width: : 989px !important;
+      }
+    }
+}
+
+/* Google page and search page */
+@-moz-document domain(google.com.br), domain(google.com) {
+    body a {
+        color: #5c99d6 !important;
+    }
+
+    body a:visited {
+        color: #a679d2 !important;     
+    }
+
+    .g-blk, .knowledge-panel, .vk_arc, .mod table, .mod table span, .mod, .vk_c, .rllh__header-container div, .mnr-c, g-scrolling-carousel, #am-b1, .ab_button, .action-menu.ab_ctl {
+        background: #2b2b2b !important;
+    }
+
+    .vk_c .rllt__link:hover, .mod a div:hover {
+        background-color: #333333 !important;
+    }
+
+    ul[role=listbox] li[role=presentation]:hover {
+        background-color: #2b2b2b !important;  
+    }
+    /*
+    .g {AEprdc vk_c kp-blk knowledge-panel Wnoohf OJXvsb
+        background: #2b2b2b !important;  
+    }, .mod .dw-siw  border: 1px solid #333 !important;
+    */
+
+    #gsr, #topabar, g-inner-card, .mod .dw-sb-cont {
+        background: #333333 !important;
+    } 
+
+    .gstl_0.sbib_a, #lst-ib, #sfibbbc, #sfdiv, .mod input, ul[role=listbox] {
+        background: #333333 !important; 
+        color: #ddd !important;
+    }
+    
+    .mod input, .mod .dw-sb-btn {
+        background: #333333 !important;
+        border-color: #333 !important;
+    }
+
+    #hdtbSum, .sfbgg, #fbar, .mod, .related-question-pair {
+        background: #2b2b2b !important;    
+    }  
+
+    .related-question-pair, .mod span, .mod, .e2BEnf h3, .st, div[role=heading], .mnr-c div {
+        color: #ddd !important;
+    }
+
+    #hdtb-msb {
+        color: #fff;
+    }
+
+    .r a, .s a, .card-section a, .match-mod-horizontal-padding a, ul[role=listbox] li[role=presentation] a, g-more-link a span {
+        color: #5c99d6 !important;
+    }
+
+    .r a:visited, .s a:visited, .card-section a:visited, .match-mod-horizontal-padding a:visited, ul[role=listbox] li[role=presentation] .sbpqs_a, g-more-link a span:visited {
+        color: #a679d2 !important;    
+    }
+
+    .st em {
+        color: #fff !important;     
+    }
+
+    cite {
+        color: #09a53c !important;
+    }
+}
